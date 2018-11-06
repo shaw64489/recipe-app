@@ -18,7 +18,7 @@ export const highlightSelected = id => {
         el.classList.remove('results__link--active');
     })
 
-    document.querySelector(`a[href="#${id}"]`).classList.add('results__link--active');
+    document.querySelector(`.results__link[href="#${id}"]`).classList.add('results__link--active');
 };
 
 //example - 'Pasta with tomato and spinach'
@@ -29,7 +29,7 @@ Acc = 9 / acc + current.length = 15 / new title = 'pasta', 'with', 'tomato'
 Acc = 15 / acc + current.length = 18 / not pushed etc
 final work Pasta with tomato
 */
-const limitRecipeTitle = (title, limit = 17) => {
+export const limitRecipeTitle = (title, limit = 17) => {
 
     const newTitle = [];
 
